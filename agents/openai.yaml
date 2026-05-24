@@ -1,4 +1,4 @@
 interface:
-  display_name: "kkkd-insight"
+  display_name: "Total-Insight-For-PM"
   short_description: "用5看3定输出正式中文产品判断书"
-  default_prompt: "Use $kkkd-insight to either research a topic from scratch or synthesize provided materials into a formal 5看3定 product judgment document with evidence tags, prioritization, and a converged recommendation."
+  default_prompt: "使用 $Total-Insight-For-PM，从零研究或整合现有材料，输出一份采用5看3定结构、正式中文书写、判断明确且可执行的产品机会洞察文档。"

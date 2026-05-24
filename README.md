@@ -1,138 +1,140 @@
-# kkkd-insight
+# Total-Insight-For-PM
 
-kkkd-insight is a writing skill for producing formal product judgment documents using the `5 Looks + 3 Decisions` framework.
+`Total-Insight-For-PM` 是一个面向产品经理的机会洞察与产品判断写作 skill。
 
-It is designed for product direction analysis, opportunity assessment, scope narrowing, and go/no-go style decision documents. It is not meant for generic PRDs, simple market overviews, or feature list roundups.
+它基于“`5看3定`”框架，用于输出正式书面化的《产品判断书》《方向判断书》或《机会洞察文档》。适合产品方向分析、机会判断、范围收敛、立项判断，以及基于研究材料形成明确产品结论的场景。
 
-## What It Does
+它不适用于通用 PRD、简单市场综述、普通竞品资料汇总或无证据基础的空泛战略写作。
 
-This skill helps turn scattered research into a decision-oriented document with:
+## 能力概述
 
-- a clear recommendation up front
-- structured reasoning through `5 Looks`
-- execution guidance through `3 Decisions`
-- explicit handling of assumptions, evidence gaps, and next validation steps
+这个 skill 可以把分散的研究输入收敛成面向决策的正式文档，核心特征包括：
 
-It is suitable for two common workflows:
+- 开头直接给出判断结论
+- 按 `5看` 展开结构化论证
+- 按 `3定` 收束到执行方向
+- 明确处理证据边界、假设项与后续补证方向
 
-- starting from scratch and doing the minimum required research before writing
-- taking existing research materials and converging them into a final judgment
+它适配两类常见工作方式：
 
-## Best Use Cases
+- 从零启动研究，在完成最小必要研究后输出最终判断书
+- 基于已有研究材料、VOC 摘要或竞品分析，快速收敛成最终判断文档
 
-- Assess whether an AI capability should enter a product roadmap
-- Evaluate a new product direction or opportunity area
-- Narrow scope before MVP definition
-- Convert research notes, VOC summaries, and competitor findings into an executable decision memo
+## 适用场景
 
-## Core Framework
+- 评估某项 AI 能力是否应进入产品路线
+- 判断某个新方向或机会点是否值得做
+- 在 MVP 定义前先做范围收敛
+- 将研究笔记、VOC 摘要、竞品结论整理成可执行的机会洞察文档
 
-### 5 Looks
+## 核心框架
 
-- Look at the industry
-- Look at the users
-- Look at the competition
-- Look at the opportunity
-- Look at yourself
+### 5看
 
-### 3 Decisions
+- 看行业
+- 看用户
+- 看竞争
+- 看机会
+- 看自己
 
-- Decide control points
-- Decide goals
-- Decide strategy
+### 3定
 
-## Output Characteristics
+- 定控制点
+- 定目标
+- 定策略
 
-This skill enforces the following output behavior:
+## 输出要求
 
-- formal written output, not conversational writing
-- title format: `<topic>_Opportunity Insights`
-- `Executive Summary` must come first
-- the main body must follow `5 Looks` and `3 Decisions`
-- the conclusion must be actionable
-- at least one comparison table or judgment matrix must appear
-- dividers must be inserted between heading levels for readability
-- AI sections must describe capability boundaries, trigger logic, input/output, Agent-Skill split, and cost constraints
-- assumptions, guesses, and evidence gaps must be moved to the appendix instead of being mixed into the main body
-- when the topic boundary, target user, output expectation, evidence scope, or business constraints are unclear, the skill should ask clarifying questions before drafting the final document
+这个 skill 会强约束输出方式：
 
-## User and Competition Requirements
+- 使用正式中文书面语，而不是聊天式表达
+- 文档标题统一采用 `XXXX_机会洞察`
+- 第一部分必须是 `执行摘要`
+- 主体必须严格采用 `5看` 与 `3定`
+- 结论必须可执行
+- 至少包含一张对比表或判断矩阵
+- 各级标题之间加入分割线，提升扫描效率
+- AI 相关内容只描述能力边界、触发机制、输入输出、Agent-Skill 分工与成本约束
+- 推测、假设和证据缺口统一进入附录 `备注项`，不混入正文
+- 当命题边界、目标用户、输出要求、证据范围或业务约束不清晰时，先补问关键问题，再写最终稿
 
-### User Section Must Include
+## 用户与竞品要求
+
+### 看用户必须包含
 
 - VOC
-- scenario chain
-- benchmark standards
-- a user journey table
-- a matching Mermaid journey flow diagram
+- 场景链路
+- 标杆标准
+- 用户场景旅程表
+- 对应的 Mermaid 用户场景旅程流程图
 
-### Competition Section Must Include
+### 看竞争必须包含
 
-- direct competitors
-- substitutes and default alternatives
-- comparison beyond feature count
-- at least 2 UI screenshots for each core benchmark product
+- 直接竞品
+- 替代方案与默认路径
+- 超越功能数量的链路比较
+- 每个核心对标产品至少 `2` 张功能界面截图
 
-## Working Modes
+## 工作模式
 
-### 1. Research-First Mode
+### 1. 从零研究模式
 
-Use this when the user only provides a topic or a direction.
+当用户只给出命题或方向时使用。
 
-Expected behavior:
+预期行为：
 
-- complete the minimum necessary research for industry, users, and competition
-- then write the final judgment document
-- ask clarifying questions first when the problem framing is still ambiguous
+- 完成行业、用户、竞争三类最小必要研究
+- 然后输出最终判断文档
+- 如果问题边界仍然模糊，先向用户补问关键问题
 
-### 2. Material-Convergence Mode
+### 2. 材料收敛模式
 
-Use this when the user already provides research materials, VOC summaries, or competitor analysis.
+当用户已经提供研究材料、VOC 摘要或竞品分析时使用。
 
-Expected behavior:
+预期行为：
 
-- separate usable evidence from uncertain or missing evidence
-- converge the materials into a decision document
-- ask clarifying questions first if the user intent or judgment boundary is still ambiguous
+- 区分可直接采用的证据、存在不确定性的证据和明显缺口
+- 将这些材料收敛为一份判断文档
+- 如果用户意图或判断边界仍不清晰，先补问关键问题
 
-## Standard Document Structure
+## 标准文档结构
 
-1. Executive Summary
-2. 5 Looks
-3. 3 Decisions
-4. Conclusion and Next Steps
-5. Appendix
+1. 执行摘要
+2. 5看
+3. 3定
+4. 结论与下一步
+5. 附录
 
-See [references/output_template.md](./references/output_template.md) for the template structure.
+完整模板见 [references/output_template.md](./references/output_template.md)。
 
-## Evidence Rules
+## 证据规则
 
-kkkd-insight is strict about evidence handling:
+`Total-Insight-For-PM` 对证据处理有明确约束：
 
-- prefer user-provided materials and first-hand evidence
-- do not present suggested sample sizes as completed research
-- do not present guesses as facts
-- keep the main body limited to confirmed conclusions
-- move assumptions, evidence gaps, and follow-up validation needs into the appendix
+- 优先使用用户提供的材料与一手证据
+- 不把建议样本量写成已完成研究
+- 不把推测写成事实
+- 正文只保留已证实结论
+- 假设、证据缺口与后续补证方向统一放入附录
 
-Detailed standards are documented in [references/research_standards.md](./references/research_standards.md).
+详细标准见 [references/research_standards.md](./references/research_standards.md)。
 
-## Writing Constraints
+## 写作限制
 
-This skill explicitly avoids:
+这个 skill 明确避免：
 
-- chatty explanation style
-- marketing language for AI
-- weak conclusions such as "everything has value" or "we can keep observing"
-- rhetorical contrast patterns such as:
-  - "not A, but B"
-  - "it does not depend on A, it depends on B"
-  - "the real value is not A, but B"
+- 聊天式解释口吻
+- AI 营销化语言
+- “都有价值”“可以继续观察”这类弱结论
+- 下列对仗式句型：
+  - `不是A，而是B`
+  - `不取决于A，而取决于B`
+  - `真实价值点不在A，而在B`
 
-## Repository Structure
+## 仓库结构
 
 ```text
-kkkd-insight/
+Total-Insight-For-PM/
 ├── SKILL.md
 ├── README.md
 ├── agents/
@@ -143,31 +145,31 @@ kkkd-insight/
     └── research_standards.md
 ```
 
-## Reference Files
+## 参考文件
 
 - [SKILL.md](./SKILL.md)
-  Full skill definition, workflow, output contract, and required constraints.
+  完整 skill 定义、工作流、输出契约与强制约束。
 
 - [references/output_template.md](./references/output_template.md)
-  Canonical output template for the final document.
+  最终文档的标准输出模板。
 
 - [references/research_standards.md](./references/research_standards.md)
-  Evidence policy, VOC requirements, competitor matrix rules, and opportunity filtering standards.
+  证据政策、VOC 要求、竞品矩阵规范与机会收敛标准。
 
 - [references/optional_models.md](./references/optional_models.md)
-  Optional supporting models such as `PESTEL`, `Persona`, `CJM`, `SWOT`, and `VRIO`.
+  可选分析模型，例如 `PESTEL`、`Persona`、`CJM`、`SWOT`、`VRIO` 等。
 
-## Style of Output
+## 输出风格
 
-kkkd-insight is optimized for documents that are:
+`Total-Insight-For-PM` 适合输出以下类型的文档：
 
-- explicit in judgment
-- structurally stable
-- operationally useful
-- evidence-sensitive
+- 判断明确
+- 结构稳定
+- 可直接进入推进环节
+- 对证据边界敏感
 
-It is intentionally not optimized for exploratory essays or loosely framed strategy writing.
+它不是为探索性随笔或松散战略发散而设计的。
 
-## License
+## 许可说明
 
-No explicit open-source license is included yet. Add one later if you want to distribute the skill publicly.
+当前仓库已包含 `LICENSE` 文件。如需公开分发，可根据后续需要继续完善说明。
