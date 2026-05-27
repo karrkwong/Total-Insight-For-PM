@@ -1,4 +1,4 @@
 interface:
   display_name: "Total-Insight-For-PM"
-  short_description: "用5看3定输出正式中文产品判断书"
-  default_prompt: "使用 $Total-Insight-For-PM，从零研究或整合现有材料，输出一份采用5看3定结构、正式中文书写、判断明确且可执行的产品机会洞察文档。"
+  short_description: "用5看3定输出正式中文机会洞察文档"
+  default_prompt: "使用 $Total-Insight-For-PM，从零研究或整合现有材料，输出一份采用5看3定结构、正式中文书写、判断明确且可执行的产品机会洞察文档。看机会必须从看行业、看用户、看竞争、看自己中收敛出主机会点，3定必须围绕同一个主机会点展开；正式输出前执行最多3轮反向验证，未达到发布条件时输出失败报告。"
